@@ -1,0 +1,18 @@
+<table class="table col-12">
+    <thead class="thead-dark">
+        <tr>
+            <th>Nombre</th>
+            <th>Descripción</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{producto.nombreEnMayusculas()}}</td>
+            <td>{{producto.descripcion}}</td>
+            <td>
+                <button class="btn btn-danger" (click)="eliminar()">Elminar</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

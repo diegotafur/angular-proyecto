@@ -1,0 +1,27 @@
+<div class="row justify-content-center align-items-center">
+    <!-- <form class="col-8">
+        <div class="form-group">
+            <input required="true" type="text" id="correo" class="form-control" placeholder='Correo' #correo>
+        </div>
+        <div class="form-group">
+            <input required="true" type="password" id="password" class="form-control" placeholder='Contraseña'
+                #password>
+        </div>
+        <div>
+            <button type="button" class="btn btn-success" (click)="login()">Ingresar</button>
+        </div>
+    </form> -->
+    <form class="col-8">
+        <div class="form-group">
+            <input required="true" type="text" id="correo" class="form-control" placeholder='Correo'
+                [(ngModel)]="correo" name="correo">
+        </div>
+        <div class="form-group">
+            <input required="true" type="password" id="password" class="form-control" placeholder='Contraseña'
+                [(ngModel)]="password" name="password">
+        </div>
+        <div>
+            <button type="button" class="btn btn-success" (click)="login()">Ingresar</button>
+        </div>
+    </form>
+</div>

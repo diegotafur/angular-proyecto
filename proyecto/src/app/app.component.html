@@ -1,0 +1,5 @@
+<div class="container">
+      <button *ngIf="usuarioLogueado" class="btn-warning btn" (click)="logout()">Cerrar sesión</button>
+      <app-login *ngIf="!usuarioLogueado" (onCambioEstado)="estadoUsuario($event)"></app-login>
+      <app-listado-productos *ngIf="usuarioLogueado"></app-listado-productos>
+</div>
